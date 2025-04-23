@@ -8,6 +8,8 @@
 - Can decrypt logs securely using password authentication.
 - Is stealthy and cross-platform in design.
 
+![Logo](./img.png)
+
 ---
 
 ## ⚙️ Features
@@ -30,7 +32,7 @@
 > ⚠️ Python 3.8+ required (recommended: 3.10+)
 
 ```bash
-git clone https://github.com/yourusername/ghosttap.git
+git clone https://github.com/Theshubhops/GhostTap.git
 cd ghosttap
 ```
 
@@ -61,13 +63,14 @@ To change the decryption password:
 import hashlib
 print(hashlib.sha256("yourpassword".encode()).hexdigest())
 ```
+or
+Run the password_gen.py file and enter your password to get hashed password.
 
 2. Replace the value of `HASHED_PASSWORD` in `decryptor.py`:
 
 ```python
 HASHED_PASSWORD = "your_generated_hash_here"
 ```
-
 Now only the person with the correct password can decrypt the logs.
 
 ---
@@ -134,7 +137,7 @@ You’ll be asked for the decryption password. It will output a readable `.txt` 
 
 ## 📬 License
 
-MIT License © 2025 [Your Name]
+MIT License © 2025 Shubham Pandey
 
 ---
 
